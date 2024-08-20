@@ -962,6 +962,7 @@ form label {
 #fh5co-travel,
 #fh5co-accommodation,
 #fh5co-rsvp,
+#fh5co-islay,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -978,6 +979,7 @@ form label {
   #fh5co-travel,
   #fh5co-accommodation,
   #fh5co-rsvp,
+  #fh5co-islay,
   .fh5co-section {
     padding: 3em 0;
   }

@@ -247,6 +247,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
+  margin-bottom: 50px;
 }
 .fh5co-video a {
   z-index: 1001;
@@ -960,6 +961,7 @@ form label {
 #fh5co-gallery,
 #fh5co-travel,
 #fh5co-accommodation,
+#fh5co-rsvp,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -975,6 +977,7 @@ form label {
   #fh5co-gallery,
   #fh5co-travel,
   #fh5co-accommodation,
+  #fh5co-rsvp,
   .fh5co-section {
     padding: 3em 0;
   }

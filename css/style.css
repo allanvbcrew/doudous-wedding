@@ -1822,5 +1822,14 @@ form label {
   opacity: 0;
 }
 
+.nav-pills>li.active>a:focus
+{
+  background-color: gray;
+}
+.nav-pills>li.active>a
+{
+  background-color: gray;
+}
+
 /*# sourceMappingURL=style.css.map */
 

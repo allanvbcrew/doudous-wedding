@@ -889,6 +889,7 @@ form label {
 }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
+#fh5co-rsvp .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 20px 20px;
   background: #fff !important;
@@ -969,6 +970,7 @@ form label {
 #fh5co-travel,
 #fh5co-accommodation,
 #fh5co-rsvp,
+#fh5co-activities,
 #fh5co-islay,
 .fh5co-section {
   padding: 7em 0;
@@ -986,6 +988,7 @@ form label {
   #fh5co-travel,
   #fh5co-accommodation,
   #fh5co-rsvp,
+  
   #fh5co-islay,
   .fh5co-section {
     padding: 3em 0;

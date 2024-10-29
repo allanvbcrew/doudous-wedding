@@ -39,6 +39,8 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Popper.js dropdown-->
+	<link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js'>
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
@@ -59,6 +61,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+
 	<link rel="icon" href="images/wedding-roundel.png">
 
 </head>
@@ -67,230 +71,232 @@
 
 	<div class="fh5co-loader"></div>
 
-	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container">
-				<div class="row">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<ul>
+					<li class="active"><a href="#fh5co-rsvp">English <span class="fi fi-gb-sct"></span></a></li>
+					<li class="active"><a href="#fh5co-rsvp">Français <span class="fi fi-fr"></span></a></li>
+				</ul>
+				<div class="col-xs-10 text-right menu-1">
 
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li class="active"><a href="#fh5co-islay">Welcome to Islay</a></li>
-							<li class="active"><a href="#fh5co-event">Event Details</a></li>
-							<li class="active"><a href="#fh5co-travel">Travel</a></li>
-							<li class="active"><a href="#fh5co-accommodation">Accommodation</a></li>
-							<li class="active"><a href="#fh5co-activities">Activities</a></li>
-							<li class="active"><a href="#fh5co-rsvp">RSVP</a></li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</nav>
-
-		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/Fishing-boat-at-Sunset.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<div class="display-t">
-							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1>Sophie &amp; Allan</h1>
-								<br>
-								<img src="images/wedding-roundel.png" alt="Sophie + Allan">
-								<h1>19.07.2025</h1>
-								<div class="flipTimebox">
-									<div class="clock clock-fix"></div>
-								</div>
-								<p><a href="#fh5co-event" class="btn btn-default btn-sm">Save our date</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<div id="fh5co-islay">
-			<div class="overlay"></div>
-			<div class="container">
-
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2>Welcome to Islay !</h2>
-						<br>
-						<br>
-						<p>The Isle of Islay is the southernmost island of the Inner Southern Hebrides, on the West Coast of Scotland.</p>
-						<p>Islay have now been our home for the last two years. After dozens of trips to the island, we have decided to move here in 2022. We live in Claddach, at the back of Portnahaven, and can enjoy the fresh air of the Atlantic ocean all year round. </p>
-						<br>
-						<div style="width: 100%">
-							<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Portnahaven,%20Isle%20of%20Islay+(Portnahaven,%20Isle%20of%20Islay)&amp;t=p&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed&ll=55.86197085734453, -4.2568261245023455"></iframe>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/page-86.jpg); ">
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/page-149.jpg); ">
-					</div>
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="#fh5co-islay">Welcome to Islay</a></li>
+						<li class="active"><a href="#fh5co-event">Event Details</a></li>
+						<li class="active"><a href="#fh5co-travel">Travel</a></li>
+						<li class="active"><a href="#fh5co-accommodation">Accommodation</a></li>
+						<li class="active"><a href="#fh5co-activities">Activities</a></li>
+						<li class="active"><a href="#fh5co-rsvp">RSVP</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
+	</nav>
 
-		<div id="fh5co-event" class="fh5co-bg">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2>Event Details</h2>
-						<br>
-						<br>
-						<p> You will find below some details about the planning for the ceremony, dinner and wedding party. Whether you decide to join us for a part of it, or for the whole day, please consider that booking your transport ahead of time is important. You will see below more details about public transport and taxis.</p>
-					</div>
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/Fishing-boat-at-Sunset.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="fh5co-video fh5co-bg" style="background-image: url(images/Portnahaven-Panorama1.jpg); ">
-								</div>
-								<div class="col-md-6 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Ceremony</h3>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>19 July 2025</span>
-										</div>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>3PM</span>
-										</div>
-										<p>At <b>Portnahaven Beach</b></p>
-										<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d562.376461593466!2d-6.508295723892621!3d55.68019275010519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDQwJzQ4LjciTiA2wrAzMCcyNS41Ilc!5e0!3m2!1sen!2suk!4v1723814375833!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Wedding Dinner & Party</h3>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>19 July 2025</span>
-										</div>
-										<div class="event-col">
-
-											<i class="icon-clock"></i>
-											<span>6PM</span>
-										</div>
-										<p>At <b>The Rhinns Hall, Portnahaven, Isle of Islay</b></p>
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.5049347995878!2d-6.506031941821736!3d55.680208600214485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488af57f94f9ec9d%3A0xe28931472e61e701!2sThe%20Rhinns%20Hall!5e0!3m2!1sen!2suk!4v1723814496351!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-									</div>
-								</div>
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Sophie &amp; Allan</h1>
+							<br>
+							<img src="images/wedding-roundel.png" alt="Sophie + Allan">
+							<h1>19.07.2025</h1>
+							<div class="flipTimebox">
+								<div class="clock clock-fix"></div>
 							</div>
+							<p><a href="#fh5co-event" class="btn btn-default btn-sm">Save our date</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</header>
 
-		<div id="fh5co-travel"">
-		<div class=" overlay"></div>
+	<div id="fh5co-islay">
+		<div class="overlay"></div>
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Welcome to Islay !</h2>
+					<br>
+					<br>
+					<p>The Isle of Islay is the southernmost island of the Inner Southern Hebrides, on the West Coast of Scotland.</p>
+					<p>Islay have now been our home for the last two years. After dozens of trips to the island, we have decided to move here in 2022. We live in Claddach, at the back of Portnahaven, and can enjoy the fresh air of the Atlantic ocean all year round. </p>
+					<br>
+					<div style="width: 100%">
+						<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Portnahaven,%20Isle%20of%20Islay+(Portnahaven,%20Isle%20of%20Islay)&amp;t=p&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed&ll=55.86197085734453, -4.2568261245023455"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="fh5co-video fh5co-bg" style="background-image: url(images/page-86.jpg); ">
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="fh5co-video fh5co-bg" style="background-image: url(images/page-149.jpg); ">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-event" class="fh5co-bg">
+		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Travel</h2>
+					<h2>Event Details</h2>
 					<br>
-					<p>Well, you got it, you'll have to join us on our amazing island for the party. For those of you joining us from Europe, you'll need to first, make it to Scotland!
-						<br>Then you can travel to Islay :) Islay can be reached by ferry from Kennacraig on the mainland or by flying into Islay Airport from Glasgow. We recommend booking your travel in advance to ensure availability.
-						<br> Wherever you come from, we've tried to provide some tips below to make you trip as easy and clear as possible.
-					</p>
-
+					<br>
+					<p> You will find below some details about the planning for the ceremony, dinner and wedding party. Whether you decide to join us for a part of it, or for the whole day, please consider that booking your transport ahead of time is important. You will see below more details about public transport and taxis.</p>
 				</div>
-			</div>
-
-			<div <div id="travel-tabs" class="row">
-
-				<br>
-				<div class="tab-content col-md-10 col-md-offset-1 text-justify fh5co-heading animate-box">
-					<div class="namedesig">
-						<div class="col-md-6">
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-aircraft"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>By plane From Glasgow Airport (GLA)</h3>
-									<ul>
-										<li><b>Direct Flights:</b> There are daily flights from Glasgow Airport to Islay Airport (ILY). The flight takes around 45 minutes and offers beautiful aerial views of Scotland’s west coast and the Hebrides. Upon arrival, taxis and car rentals are available to transport you to your accommodation or the wedding venue.</li>
-										<li><b>Airline:</b> Loganair operates this route, and it’s recommended to book tickets early, especially in the summer months when Islay is a popular destination. : <a href="https://www.loganair.co.uk" target="_blank">www.loganair.co.uk </a></li>
-									</ul>
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="fh5co-video fh5co-bg" style="background-image: url(images/Portnahaven-Panorama1.jpg); ">
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Ceremony</h3>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>19 July 2025</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>3PM</span>
+									</div>
+									<p>At <b>Portnahaven Beach</b></p>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d562.376461593466!2d-6.508295723892621!3d55.68019275010519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDQwJzQ4LjciTiA2wrAzMCcyNS41Ilc!5e0!3m2!1sen!2suk!4v1723814375833!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Wedding Dinner & Party</h3>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>19 July 2025</span>
+									</div>
+									<div class="event-col">
 
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-anchor"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>By Car and Ferry from Kennacraig Ferry Terminal</h3>
-									<ul>
-										<li><b>From Glasgow:</b> Drive west on the M8. Then, take the A82 north towards Loch Lomond. Continue along the A83, passing through Inveraray and Lochgilphead, until you reach the Kennacraig Ferry Terminal. This scenic drive takes approximately 2.5 hours.</li>
-										<li><b>Ferry from Kennacraig to Islay:</b> Ferries are operated by Caledonian MacBrayne (CalMac) and sail to either Port Askaig or Port Ellen on Islay. The ferry journey takes around 2 hours.</li>
-										<li><b>Booking:</b> It’s important to book your ferry in advance. You can check the ferry schedule and book tickets on the CalMac website. <a href="https://www.calmac.co.uk" target="_blank">www.calmac.co.uk </a> </li>
+										<i class="icon-clock"></i>
+										<span>6PM</span>
+									</div>
+									<p>At <b>The Rhinns Hall, Portnahaven, Isle of Islay</b></p>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.5049347995878!2d-6.506031941821736!3d55.680208600214485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488af57f94f9ec9d%3A0xe28931472e61e701!2sThe%20Rhinns%20Hall!5e0!3m2!1sen!2suk!4v1723814496351!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
-							</div>
-
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-briefcase"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Car Rental</h3>
-									<ul>
-										<li><b>Car Rental on Islay</b></li>
-										<ul>
-											<li><b>Islay Car Hire</b>: Located near Islay Airport and ferry ports. Pre-book early, especially in summer.
-												Contact: <a href="https://www.islaycarhire.com/">https://www.islaycarhire.com/</a> | +44 (0)1496 810544</li>
-										</ul>
-										<li><b>Car Rental in Glasgow or Edinburgh</b></li>
-										<ul>
-											<li>Major rental companies include Enterprise, Avis, Hertz, and Sixt. All are available at Glasgow (GLA) and Edinburgh (EDI) Airports.</li>
-											<li>Tip: Book in advance, and request an automatic transmission if needed.</li>
-										</ul>
-									</ul>
-									</p>
-								</div>
-							</div>
-
-							<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-								<span class="icon">
-									<i class="icon-globe2"></i>
-								</span>
-								<div class="feature-copy">
-									<h3>Important Travel Tips:</h3>
-									<ul>
-										<li>Passport & Visa Requirements</li>
-										<li>Currency</li>
-										<li>Driving in the UK</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box">
-							<div class="fh5co-video fh5co-bg" style="background-image: url(images/loganair.jpg); ">
-							</div>
-						</div>
-						<div class="col-md-6 animate-box">
-							<div class="fh5co-video fh5co-bg" style="background-image: url(images/calmac.jpg); ">
-							</div>
-						</div>
-						<div class="col-md-6 animate-box">
-							<div class="fh5co-video fh5co-bg" style="background-image: url(images/waves-frenchmans-rocks.jpg); ">
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id="fh5co-travel"">
+		<div class=" overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+				<h2>Travel</h2>
+				<br>
+				<p>Well, you got it, you'll have to join us on our amazing island for the party. For those of you joining us from Europe, you'll need to first, make it to Scotland!
+					<br>Then you can travel to Islay :) Islay can be reached by ferry from Kennacraig on the mainland or by flying into Islay Airport from Glasgow. We recommend booking your travel in advance to ensure availability.
+					<br> Wherever you come from, we've tried to provide some tips below to make you trip as easy and clear as possible.
+				</p>
+
+			</div>
+		</div>
+
+		<div <div id="travel-tabs" class="row">
+
+			<br>
+			<div class="tab-content col-md-10 col-md-offset-1 text-justify fh5co-heading animate-box">
+				<div class="namedesig">
+					<div class="col-md-6">
+						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+							<span class="icon">
+								<i class="icon-aircraft"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>By plane From Glasgow Airport (GLA)</h3>
+								<ul>
+									<li><b>Direct Flights:</b> There are daily flights from Glasgow Airport to Islay Airport (ILY). The flight takes around 45 minutes and offers beautiful aerial views of Scotland’s west coast and the Hebrides. Upon arrival, taxis and car rentals are available to transport you to your accommodation or the wedding venue.</li>
+									<li><b>Airline:</b> Loganair operates this route, and it’s recommended to book tickets early, especially in the summer months when Islay is a popular destination. : <a href="https://www.loganair.co.uk" target="_blank">www.loganair.co.uk </a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+							<span class="icon">
+								<i class="icon-anchor"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>By Car and Ferry from Kennacraig Ferry Terminal</h3>
+								<ul>
+									<li><b>From Glasgow:</b> Drive west on the M8. Then, take the A82 north towards Loch Lomond. Continue along the A83, passing through Inveraray and Lochgilphead, until you reach the Kennacraig Ferry Terminal. This scenic drive takes approximately 2.5 hours.</li>
+									<li><b>Ferry from Kennacraig to Islay:</b> Ferries are operated by Caledonian MacBrayne (CalMac) and sail to either Port Askaig or Port Ellen on Islay. The ferry journey takes around 2 hours.</li>
+									<li><b>Booking:</b> It’s important to book your ferry in advance. You can check the ferry schedule and book tickets on the CalMac website. <a href="https://www.calmac.co.uk" target="_blank">www.calmac.co.uk </a> </li>
+							</div>
+						</div>
+
+						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+							<span class="icon">
+								<i class="icon-briefcase"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Car Rental</h3>
+								<ul>
+									<li><b>Car Rental on Islay</b></li>
+									<ul>
+										<li><b>Islay Car Hire</b>: Located near Islay Airport and ferry ports. Pre-book early, especially in summer.
+											Contact: <a href="https://www.islaycarhire.com/">https://www.islaycarhire.com/</a> | +44 (0)1496 810544</li>
+									</ul>
+									<li><b>Car Rental in Glasgow or Edinburgh</b></li>
+									<ul>
+										<li>Major rental companies include Enterprise, Avis, Hertz, and Sixt. All are available at Glasgow (GLA) and Edinburgh (EDI) Airports.</li>
+										<li>Tip: Book in advance, and request an automatic transmission if needed.</li>
+									</ul>
+								</ul>
+								</p>
+							</div>
+						</div>
+
+						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+							<span class="icon">
+								<i class="icon-globe2"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Important Travel Tips:</h3>
+								<ul>
+									<li>Passport & Visa Requirements</li>
+									<li>Currency</li>
+									<li>Driving in the UK</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-video fh5co-bg" style="background-image: url(images/loganair.jpg); ">
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-video fh5co-bg" style="background-image: url(images/calmac.jpg); ">
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-video fh5co-bg" style="background-image: url(images/waves-frenchmans-rocks.jpg); ">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 	</div>
 
 
@@ -301,7 +307,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Accommodation</h2>
 					<br>
-					<br> 
+					<br>
 					<p><strong>Portnahaven (Wedding Venue Location)</strong>
 						<br>For ultimate convenience, staying right in <strong>Portnahaven</strong> is the best option, as this is where the wedding will take place. A peaceful coastal village, Portnahaven offers a few quaint self-catering cottages and guesthouses within walking distance of the wedding venue. This is perfect if you want to avoid driving altogether and enjoy the charming seaside atmosphere of the village both before and after the wedding.
 
@@ -333,7 +339,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-activities">
+	<!--<div id="fh5co-activities">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -345,7 +351,7 @@
 			</div>
 		</div>
 	</div>
-
+-->
 
 	<div id="fh5co-rsvp" class="fh5co-section-gray">
 		<div class="overlay"></div>

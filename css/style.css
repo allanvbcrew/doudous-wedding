@@ -1440,7 +1440,8 @@ form label {
   padding: 0;
   margin: 0;
 }
-#fh5co-offcanvas ul li {
+
+#fh5co-offcanvas, #fh5co-accommodation ul li {
   padding: 0;
   margin: 0;
   list-style: none;

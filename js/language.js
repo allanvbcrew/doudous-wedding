@@ -1,8 +1,7 @@
-
 $(function(){
 $("#eng").click(function(){
-  $(".french").fadeOut();
-   $(".english").fadeIn();
+  $(".french").hide();
+   $(".english").show();
 });
 $("#fr").click(function(){
    $(".english").hide();
